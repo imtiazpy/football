@@ -44,10 +44,6 @@ a {
 
 
 /* ===========Header style========== */
-/* header a {
-    text-decoration: none;
-    color: #FFFFFF;
-} */
 .menu-wrapper {
     background-color: #2D25A0;
     opacity: 0.95;
@@ -73,7 +69,6 @@ nav a:hover {
 
 .banner {
     background-color: #2D25A0;
-    /* margin-top: 50px; */
     position: fixed;
     width: 100%;
     height: 100%;
@@ -86,14 +81,7 @@ nav a:hover {
     margin-bottom: 27px;
     color: #FFFFFF;
 }
-/* .watch-live-btn {
-    width: 160px;
-    transition: all 0.5s;
-}
-.watch-live-btn:hover {
-    transform: translate(5px);
-    opacity: 0.8;
-} */
+
 .banner-title i {
     margin-left: 5px;
 }
@@ -191,15 +179,48 @@ main {
 .highlights-title i {
     margin-left: 5px;
 }
-.highlights-img {
+/* .highlights-img {
     float: right;
-}
+} */
 .highlights-img img {
     margin-left: 10%;
     width: 90%;
 }
 
+/* ============Fans wall style============== */
+.fans-wall {
+    background: linear-gradient(90deg, #2D25A0, #E02C6D);
+    text-align: center;
+    color: #FFFFFF;
+}
+.fans-wall h2 {
+    font-size: 50px;
+}
 
+.fans-wall p {
+    line-height: 34px;
+    margin-bottom: 20px;
+}
+.hr-line {
+    display: inline-block;
+    width: 100px;
+    border: 1px solid white;
+    height: 2px;
+}
+.color {
+    color: yellow;
+}
+.chat-btn {
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px black;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    width: 200px;
+    transition: all 0.5s;
+}
+.chat-btn:hover {
+    transform: scale(1.1);
+}
 /* =============Footer style============== */
 
 footer {
@@ -227,4 +248,275 @@ footer {
     border-radius: 50%;
     margin: 0px 5px;
     padding: 4px;
+}
+
+
+
+/* ===============Media Queries============ */
+
+@media screen and (max-width: 480px) {
+    
+    .menu-wrapper nav {
+        display: none;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .banner {
+        position: relative;
+        top: 58px;
+    }
+    .banner-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-img {
+        margin-top: 40px;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-banner {
+        font-size: 40px;
+    }
+
+    .featured-banner i {
+        position: relative;
+        top: 8%;
+        font-size: 80px;
+    }
+    .highlights-title h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .highlights-img img {
+        margin: 5% 5%;
+    }
+    .fans-wall h2 {
+        font-size: 30px;
+    }
+    .fans-wall p {
+        line-height: 25px;
+    }
+    .hr-line {
+        display: none;
+    }
+
+    main {
+        top: 100px;
+    }
+
+    footer {
+        top: 100px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 597px) {
+    nav {
+        margin: 10px 0px;
+    }
+    nav a{
+        margin-right: 5px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .banner {
+        position: relative;
+        top: 130px;
+    }
+    .banner-title h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner-img {
+        margin-top: 40px;
+    }
+    main {
+        top: 140px;
+    }
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-banner {
+        font-size: 35px;
+    }
+
+    .featured-banner i {
+        position: relative;
+        top: 10%;
+        font-size: 90px;
+    }
+    .highlights-img img {
+        margin: 5% 5%;
+    }
+
+    .fans-wall h2 {
+        font-size: 45px;
+    }
+    .fans-wall p {
+        font-size: 14px;
+    }
+    footer {
+        top: 160px;
+    }
+}
+
+@media screen and (min-width: 598px) and (max-width: 768px) {
+    nav {
+        margin: 10px 0px;
+    }
+    nav a{
+        margin-right: 5px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .banner {
+        position: relative;
+        top: 114px;
+    }
+    .banner-title h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner-img {
+        margin-top: 40px;
+    }
+    main {
+        top: 140px;
+    }
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-banner {
+        font-size: 35px;
+    }
+
+    .featured-banner i {
+        position: relative;
+        top: 10%;
+        font-size: 90px;
+    }
+    .highlights-img img {
+        margin: 5% 5%;
+    }
+
+    .fans-wall h2 {
+        font-size: 45px;
+    }
+    .fans-wall p {
+        font-size: 14px;
+    }
+    footer {
+        top: 160px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 931px) {
+ 
+    nav a{
+        margin-right: 5px;
+    }
+
+    .banner {
+        position: fixed;
+        top: 75px;
+    }
+    .banner-title h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .banner-img {
+        margin-top: 40px;
+    }
+    main {
+        top: 600px;
+    }
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-banner {
+        font-size: 35px;
+    }
+
+    .featured-banner i {
+        position: relative;
+        top: 10%;
+        font-size: 90px;
+    }
+    .highlights-img img {
+        margin: 5% 5%;
+    }
+
+    .fans-wall h2 {
+        font-size: 45px;
+    }
+    .fans-wall p {
+        font-size: 14px;
+    }
+    footer {
+        top: 160px;
+    }
+}
+
+@media screen and (min-width: 932px) and (max-width: 1000px){
+
+    .banner {
+        position: fixed;
+        top: 82px;
+    }
+    .banner-title h1 {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .banner-img {
+        margin-top: 40px;
+    }
+    main {
+        top: 600px;
+    }
+    .player-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-banner {
+        font-size: 35px;
+    }
+
+    .featured-banner i {
+        position: relative;
+        top: 10%;
+        font-size: 90px;
+    }
+    .highlights-img img {
+        margin: 5% 5%;
+    }
+
+    .fans-wall h2 {
+        font-size: 45px;
+    }
+    .fans-wall p {
+        font-size: 14px;
+    }
+    footer {
+        top: 160px;
+    }
+}
+
+
+@media screen and (min-width: 1001px) and (max-width: 1274px) {
+    .banner {
+        position: fixed;
+        top: 85px;
+    }
+    main {
+        top: 600px;
+
+    }
 }
